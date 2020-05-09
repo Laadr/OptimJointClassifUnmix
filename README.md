@@ -25,7 +25,7 @@ An exemple of how to use the code is provided in the file runExpl.py.
 ## I/O of optimization method
 NB: be careful with labels: label 0 in input is equivalent to a unknown label
 
-`JointClassifUnmixModel.optimize(Y,R,K,C,labels,maxIter,classif\_loss='cross-entropy',M=None,maxInitIter=1000,adaptTV=False,printEnable=False,initClassif=False,initFilePath=None,srand=0)`
+`JointClassifUnmixModel.optimize(Y,R,K,C,labels,maxIter,classif_loss='cross-entropy',M=None,maxInitIter=1000,adaptTV=False,printEnable=False,initClassif=False,initFilePath=None,srand=0)`
 
 Inputs:
   - Y:            image (spatial dimension 1 x spatial dimension 2 x spectral dimension=d).
