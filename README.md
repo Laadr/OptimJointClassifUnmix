@@ -13,7 +13,7 @@ An exemple of how to use the code is provided in the file runExpl.py.
 
 ## Class initialization inputs
 
-JointClassifUnmixModel(lambdas=[1.,1.,1.,0.1,0.],lambda_q=0.1,sigma=0.01,epsilon=0.01,tol=1e-4)
+`JointClassifUnmixModel(lambdas=[1.,1.,1.,0.1,0.],lambda_q=0.1,sigma=0.01,epsilon=0.01,tol=1e-4)`
 
 - lambdas:  hyperparamaters weighting the terms of the objective function: 0)Y-MA 1)A-BZ 2)CD-QZD 3)||A||\_1 4)||Z||\_TV (cf paper)
 - lambda_q: hyperparameter weighting the penalization of matrix Q, used only when classif_loss is 'cross-entropy'
@@ -25,7 +25,7 @@ JointClassifUnmixModel(lambdas=[1.,1.,1.,0.1,0.],lambda_q=0.1,sigma=0.01,epsilon
 ## I/O of optimization method
 NB: be careful with labels: label 0 in input is equivalent to a unknown label
 
-JointClassifUnmixModel.optimize(Y,R,K,C,labels,maxIter,classif\_loss='cross-entropy',M=None,maxInitIter=1000,adaptTV=False,printEnable=False,initClassif=False,initFilePath=None,srand=0)
+`JointClassifUnmixModel.optimize(Y,R,K,C,labels,maxIter,classif\_loss='cross-entropy',M=None,maxInitIter=1000,adaptTV=False,printEnable=False,initClassif=False,initFilePath=None,srand=0)`
 
 Inputs:
   - Y:            image (spatial dimension 1 x spatial dimension 2 x spectral dimension=d).
