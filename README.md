@@ -15,11 +15,11 @@ An exemple of how to use the code is provided in the file runExpl.py.
 
 JointClassifUnmixModel(lambdas=[1.,1.,1.,0.1,0.],lambda_q=0.1,sigma=0.01,epsilon=0.01,tol=1e-4)
 
--lambdas:  hyperparamaters weighting the terms of the objective function: 0)Y-MA 1)A-BZ 2)CD-QZD 3)||A||\_1 4)||Z||\_TV (cf paper)
--lambda_q: hyperparameter weighting the penalization of matrix Q, used only when classif_loss is 'cross-entropy'
--sigma:    parameter in weight of adaptative TV (cf paper)
--epsilon:  parameter to make the TV-norm gradient-Lipschitz (cf paper)
--tol:      tolerance used to check convergence
+- lambdas:  hyperparamaters weighting the terms of the objective function: 0)Y-MA 1)A-BZ 2)CD-QZD 3)||A||\_1 4)||Z||\_TV (cf paper)
+- lambda_q: hyperparameter weighting the penalization of matrix Q, used only when classif_loss is 'cross-entropy'
+- sigma:    parameter in weight of adaptative TV (cf paper)
+- epsilon:  parameter to make the TV-norm gradient-Lipschitz (cf paper)
+- tol:      tolerance used to check convergence
 
 
 ## I/O of optimization method
