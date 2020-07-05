@@ -1,25 +1,12 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# import sys 
-# import os
-# sys.path.append(os.path.abspath("../Utils"))
-# sys.path.append(os.path.abspath("../Utils/DKSVD"))
-# import rasterTools as rtool
-# import VCA
-# from sunsal import sunsal
-# import dksvd
 
-# import itertools
-# import subprocess
 import scipy as sp
-# import scipy.linalg as splin
 import time
 import scipy.io
 import scipy.stats
 from sklearn.metrics import cohen_kappa_score, accuracy_score
-# from sklearn.metrics import f1_score, make_scorer
-# from sklearn.model_selection import GridSearchCV
 from matplotlib import pyplot as plt
 import modelOptimJointClassifUnmix
 
